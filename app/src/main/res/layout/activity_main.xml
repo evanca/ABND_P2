@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/linear_background"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/main_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:context=".MainActivity">
+
+        <LinearLayout style="@style/column">
+
+            <TextView
+
+                style="@style/title"
+                android:text="@string/water" />
+
+            <ImageView
+                style="@style/icon"
+                android:src="@drawable/water" />
+
+            <TextView
+                android:id="@+id/water_score"
+                style="@style/milliliters"
+                android:text="@string/zero_ml" />
+
+            <Button
+                style="@style/normal_drink"
+                android:onClick="plus250mlWater"
+                android:text="@string/s250ml" />
+
+            <Button
+                style="@style/medium_large_drink"
+                android:onClick="plus350mlWater"
+                android:text="@string/s350ml" />
+
+            <Button
+                style="@style/medium_large_drink"
+                android:onClick="plus500mlWater"
+                android:text="@string/s500ml" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/normal_margin_16dp"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout style="@style/column">
+
+            <TextView
+                style="@style/title"
+                android:text="@string/beverages" />
+
+            <ImageView
+                style="@style/icon"
+                android:src="@drawable/juice" />
+
+            <TextView
+                android:id="@+id/juice_score"
+                style="@style/milliliters"
+                android:text="@string/zero_ml" />
+
+            <Button
+                style="@style/normal_drink"
+                android:onClick="plus250mlJuice"
+                android:text="@string/s250ml" />
+
+            <Button
+                style="@style/medium_large_drink"
+                android:onClick="plus350mlJuice"
+                android:text="@string/s350ml" />
+
+            <Button
+                style="@style/medium_large_drink"
+                android:onClick="plus500mlJuice"
+                android:text="@string/s500ml" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/goal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/large_margin_20dp"
+        android:layout_marginEnd="@dimen/maxi_margin_30dp"
+        android:layout_marginStart="@dimen/maxi_margin_30dp"
+        android:layout_marginTop="@dimen/large_margin_20dp"
+        android:onClick="resetBoth"
+        android:text="@string/infobox"
+        android:textSize="@dimen/infobox_text" />
+
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/small_margin_10dp"
+        android:background="@color/button_bg"
+        android:fontFamily="sans-serif"
+        android:onClick="resetBoth"
+        android:text="@string/reset"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/normal_text" />
+
+</LinearLayout>

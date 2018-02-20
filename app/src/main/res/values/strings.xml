@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Court Counter</string>
+    <string name="water">Water</string>
+    <string name="beverages">Other Fluids</string>
+    <string name="s250ml">Normal Glass / Cup</string>
+    <string name="s350ml">Medium Glass / Mug</string>
+    <string name="s500ml">Large Glass / Bottle</string>
+    <string name="infobox">Adequate daily fluid intake is:  about 3.7 liters of fluids for men and about 2.7 liters of fluids a day for women. Water is the healthiest choice - it has no calories and contains no sugars that can damage teeth.</string>
+    <string name="reset">Reset</string>
+    <string name="zero_ml">0 ml</string>
+</resources>
